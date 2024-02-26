@@ -1,0 +1,13 @@
+
+<aura:component implements="lightning:isUrlAddressable,force:hasRecordId" access="global" >
+    <aura:attribute name="documentName" type="String" />
+    <aura:attribute name="documentURL" type="String" />
+    <aura:attribute name="createdBy" type="String" />
+    
+    <lightning-card title="Upload File to AWS" variant="base">
+        <div class="slds-p-around_medium">
+            <lightning-input type="file" label="Select File" onchange="{!c.handleFileChange}" />
+            <lightning-button variant="brand" label="Upload" title="Upload" onclick="{!c.uploadFile}" />
+        </div>
+    </lightning-card>
+</aura:component>
