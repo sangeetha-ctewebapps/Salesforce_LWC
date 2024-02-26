@@ -1,0 +1,9 @@
+<template>
+<lightning-card icon-name="standard:document" title="File Upload To Azure Container">
+    <div class="slds-m-left_xx-small">
+    <lightning-input type="file" label="Select File" onchange={handleFileChange}></lightning-input>
+    <lightning-button label="Upload" variant="brand" onclick={handleUpload}></lightning-button>
+    <div><p>{filename}</p></div>
+    </div>
+</lightning-card>
+</template>
